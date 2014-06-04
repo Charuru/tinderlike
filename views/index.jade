@@ -1,0 +1,15 @@
+doctype html
+html
+	head
+		title Tinder Queue
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		h1 Tinder Queue
+		p Users in queue #{queue}
+		if user
+			h1 Last User - #{user.name}
+			h3 Bio
+			p= user.bio
+			if user.photos
+				each photo in user.photos
+					img(src= photo.url)
