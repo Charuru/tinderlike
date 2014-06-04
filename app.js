@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 var tinder = require('tinder');
 var settings = {
-    "facebook_token": "####",
-    "facebook_id": "####"
+    'facebook_token': '####',
+    'facebook_id': '####'
 };
 
 var client = new tinder.Tinder(settings['facebook_token'], settings['facebook_id']);
