@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var tinder = require('tinder');
+var tinder = require('tinder/tinder');
 var settings = {
     "facebook_token": "####",
     "facebook_id": "####"
