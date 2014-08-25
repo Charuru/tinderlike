@@ -17,6 +17,10 @@ function likeUser() {
                 throw '[ERROR] Error logging in: '+ err;
             }
 
+            if(!body || !body['user']) {
+                throw '[ERROR] Error logging in.';
+            }
+
             console.log('[LOG] Welcome back, '+ body.user.full_name);
 
             setTimeout(likeUser, 10000);
